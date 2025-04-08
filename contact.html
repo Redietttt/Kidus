@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidus Tour And Travel & Car Rental</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold" href="index.html">
+                <span class="text-gold">Kidus Tour and Travel</span> & Car Rental
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="toursDropdown" role="button" data-bs-toggle="dropdown">Tours</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Luxury Escapes</a></li>
+                            <li><a class="dropdown-item" href="#">Adventure</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="carsDropdown" role="button" data-bs-toggle="dropdown">Cars</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Luxury</a></li>
+                            <li><a class="dropdown-item" href="#">SUVs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <a href="#" class="btn btn-gold ms-lg-3">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <header class="contact-hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container h-100 d-flex align-items-center">
+            <div class="hero-content text-white">
+                <h1 class="display-3 fw-bold mb-4">Get In Touch</h1>
+                <p class="lead">Our concierge team is ready to craft your perfect journey</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h2 class="display-5 fw-bold mb-4">Contact Information</h2>
+                    <p class="mb-5">Reach out via any channel below. For urgent requests, call our 24/7 concierge line.</p>
+                    
+                    <div class="contact-info">
+                        <div class="d-flex mb-4">
+                            <div class="me-4 text-gold">
+                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Headquarters</h5>
+                                <p class="mb-0">123 Luxury Avenue, Monaco 98000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="me-4 text-gold">
+                                <i class="fas fa-phone-alt fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Phone</h5>
+                                <p class="mb-0">+1 (555) 123-4567 (24/7)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="me-4 text-gold">
+                                <i class="fas fa-envelope fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Email</h5>
+                                <p class="mb-0">concierge@luxeandroad.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <h5 class="mb-3">Follow Us</h5>
+                        <div class="social-icons">
+                            <a href="#" class="text-dark me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                            <a href="#" class="text-dark me-3"><i class="fab fa-facebook-f fa-2x"></i></a>
+                            <a href="#" class="text-dark me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-5">
+                            <h3 class="fw-bold mb-4">Send Us A Message</h3>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control" id="subject" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-gold w-100 py-3">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-0">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.304285676832!2d7.424580315364785!3d43.73949057912064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc280d7e8f3a5%3A0x40819a5fd979a70!2sMonaco!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- Footer -->
+ <footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <h5 class="text-gold mb-4">LUXE & ROAD</h5>
+                <p>Redefining luxury travel with curated experiences and premium vehicle rentals worldwide.</p>
+                <div class="social-icons mt-4">
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                </div>
+            </div>
+            
+            <div class="col-lg-2 col-md-6">
+                <h6 class="text-gold mb-4">Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="mb-2"><a href="about.html" class="text-white">About</a></li>
+                    <li class="mb-2"><a href="#" class="text-white">Tours</a></li>
+                    <li class="mb-2"><a href="#" class="text-white">Cars</a></li>
+                    <li class="mb-2"><a href="contact.html" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+                <h6 class="text-gold mb-4">Contact Us</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-gold"></i> 123 Luxury Ave, Monaco</li>
+                    <li class="mb-2"><i class="fas fa-phone me-2 text-gold"></i> +1 (555) 123-4567</li>
+                    <li class="mb-2"><i class="fas fa-envelope me-2 text-gold"></i> concierge@luxeandroad.com</li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+                <h6 class="text-gold mb-4">Newsletter</h6>
+                <p>Subscribe for exclusive offers and travel inspiration.</p>
+                <form>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <button class="btn btn-gold" type="submit">Join</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <hr class="my-4 bg-secondary">
+        
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="small mb-0">&copy; 2024 LUXE & ROAD. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="small mb-0">
+                    <a href="#" class="text-white me-3">Privacy Policy</a>
+                    <a href="#" class="text-white">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+</body>
+</html>

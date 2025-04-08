@@ -1,0 +1,280 @@
+/* Root Variables */
+:root {
+    --gold: #d4af37;
+    --dark: #0a1a2a;
+    --darker: #050e17;
+    --light: #f8f9fa;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Text Colors */
+.text-gold {
+    color: var(--gold) !important;
+}
+.text-light {
+    color: var(--light) !important;
+}
+
+/* Background Colors */
+.bg-gold {
+    background-color: var(--gold) !important;
+}
+.bg-dark {
+    background-color: var(--dark) !important;
+}
+.bg-darker {
+    background-color: var(--darker) !important;
+}
+.bg-secondary {
+    background-color: #6c757d !important;
+}
+
+/* Buttons */
+.btn-gold {
+    background-color: var(--gold);
+    color: var(--dark);
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn-gold:hover {
+    background-color: #c2a227;
+    box-shadow: 0 4px 10px var(--shadow);
+}
+.btn-outline-gold {
+    border-color: var(--gold);
+    color: var(--gold);
+    transition: all 0.3s ease;
+}
+.btn-outline-gold:hover {
+    background-color: var(--gold);
+    color: var(--dark);
+    box-shadow: 0 4px 10px var(--shadow);
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1.5rem 0;
+    transition: all 0.3s ease;
+    background-color: transparent !important;
+}
+.navbar.scrolled {
+    background-color: var(--dark) !important;
+    padding: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.nav-link {
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.nav-link:hover {
+    color: var(--gold) !important;
+    transform: scale(1.05);
+}
+.nav-link.active {
+    color: var(--gold) !important;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    min-height: 600px;
+    background: url('../Images/hero-bg.jpg') center/cover no-repeat fixed;
+    position: relative;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.hero-content h1 {
+    animation: fadeInUp 1s ease-in-out;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+.tour-card img,
+.car-card img {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.tour-card:hover img,
+.car-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px; /* Match the height of your navbar */
+}
+
+/* Add padding to sections */
+section {
+    padding: 5rem 0; /* Adjust as needed */
+}
+
+/* Section Headers */
+.section-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.section-header h2 {
+    position: relative;
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: var(--gold);
+    animation: slideIn 1s ease-in-out;
+}
+@keyframes slideIn {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100px;
+    }
+}
+
+/* Testimonials */
+.testimonial-card {
+    transition: all 0.3s ease;
+}
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Form */
+.form-control {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.form-control:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        background-attachment: scroll;
+        padding-top: 80px;
+        text-align: center;
+    }
+    .navbar {
+        padding: 1rem 0;
+    }
+    section {
+        padding: 3rem 0;
+    }
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    .navbar-brand img.logo {
+        height: 40px; /* Smaller logo on mobile */
+    }
+    .navbar-brand .text-gold {
+        font-size: 1.2rem; /* Smaller text on mobile */
+    }
+}
+
+/* Logo Styling */
+.navbar-brand img.logo {
+    height: 80px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Ensure proper alignment of text and logo */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-brand .text-gold {
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: bold;
+}
+
+/* Back-to-Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--gold);
+    color: var(--dark);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.back-to-top.active {
+    opacity: 1;
+    visibility: visible;
+}
+/* Add to your style.css file */
+.btn-telegram {
+    background-color: #0088cc;
+    color: white;
+    border: none;
+}
+.btn-telegram:hover {
+    background-color: #0077b5;
+    color: white;
+}

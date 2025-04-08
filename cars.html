@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Fleet - Kidus Tour And Travel & Car Rental</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- Back-to-Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold" href="index.html">
+                <img src="assets/Images/logo.png" alt="Kidus Tour/Travel & Car Rental" class="logo">
+                <span class="text-gold ms-2">Kidus Tour/Travel</span> & Car Rental
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tours.html">Tours</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="cars.html">Cars</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+                <a href="index.html#contact" class="btn btn-gold ms-lg-3">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cars Hero Section -->
+    <section class="hero-section" style="background-image: url('assets/Images/cars-hero-bg.jpg');">
+        <div class="hero-overlay"></div>
+        <div class="container h-100 d-flex align-items-center">
+            <div class="hero-content text-white text-center" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="display-3 fw-bold mb-4">Premium Vehicle Fleet</h1>
+                <p class="lead mb-5">Travel Ethiopia in comfort with our luxury vehicles</p>
+                <a href="#featured-cars" class="btn btn-gold btn-lg px-5">View Fleet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Filter Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <form class="row g-3">
+                                <div class="col-md-3">
+                                    <label class="form-label">Vehicle Type</label>
+                                    <select class="form-select">
+                                        <option value="">All Types</option>
+                                        <option>Sedan</option>
+                                        <option>SUV</option>
+                                        <option>4x4</option>
+                                        <option>Minivan</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Price Range</label>
+                                    <select class="form-select">
+                                        <option value="">Any Price</option>
+                                        <option>5,000-10,000 ETB</option>
+                                        <option>10,000-20,000 ETB</option>
+                                        <option>20,000+ ETB</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Passengers</label>
+                                    <select class="form-select">
+                                        <option value="">Any</option>
+                                        <option>1-3</option>
+                                        <option>4-6</option>
+                                        <option>7+</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 d-flex align-items-end">
+                                    <button type="submit" class="btn btn-gold w-100">Find Vehicles</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Cars Section -->
+    <section id="featured-cars" class="py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="display-5 fw-bold">Our Vehicle Fleet</h2>
+                <p class="text-muted">Select from our premium maintained vehicles</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Car 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="card car-card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="car-img-container">
+                            <img src="assets/Images/Car1.jpg" class="card-img-top" alt="Mercedes E-Class">
+                            <div class="badge bg-gold position-absolute top-0 end-0 m-3">New</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Mercedes E-Class 2024</h5>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span><i class="fas fa-gas-pump text-gold me-2"></i> Premium</span>
+                                <span><i class="fas fa-users text-gold me-2"></i> 5 Seats</span>
+                                <span><i class="fas fa-snowflake text-gold me-2"></i> A/C</span>
+                            </div>
+                            <p class="card-text mb-4">Experience luxury travel with our latest Mercedes E-Class featuring premium leather seats, advanced safety systems, and smooth handling.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-check text-gold me-2"></i> Free unlimited mileage</li>
+                                <li><i class="fas fa-check text-gold me-2"></i> 24/7 roadside assistance</li>
+                                <li><i class="fas fa-check text-gold me-2"></i> GPS navigation included</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="text-gold fw-bold fs-5 d-block">10,000 ETB</span>
+                                    <small class="text-muted">per day</small>
+                                </div>
+                                <a href="#contact" class="btn btn-gold">Reserve Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="card car-card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="car-img-container">
+                            <img src="assets/Images/Car2.jpg" class="card-img-top" alt="Toyota Land Cruiser">
+                            <div class="badge bg-gold position-absolute top-0 end-0 m-3">Popular</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Toyota Land Cruiser V8</h5>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span><i class="fas fa-gas-pump text-gold me-2"></i> Diesel</span>
+                                <span><i class="fas fa-users text-gold me-2"></i> 7 Seats</span>
+                                <span><i class="fas fa-snowflake text-gold me-2"></i> A/C</span>
+                            </div>
+                            <p class="card-text mb-4">The ultimate off-road luxury vehicle for exploring Ethiopia's diverse terrain while traveling in complete comfort and safety.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-check text-gold me-2"></i> 4WD capability</li>
+                                <li><i class="fas fa-check text-gold me-2"></i> Spacious interior</li>
+                                <li><i class="fas fa-check text-gold me-2"></i> Premium sound system</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="text-gold fw-bold fs-5 d-block">18,500 ETB</span>
+                                    <small class="text-muted">per day</small>
+                                </div>
+                                <a href="#contact" class="btn btn-gold">Reserve Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="card car-card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="car-img-container">
+                            <img src="assets/Images/Car3.jpg" class="card-img-top" alt="Toyota Hiace">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Toyota Hiace Super GL</h5>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span><i class="fas fa-gas-pump text-gold me-2"></i> Diesel</span>
+                                <span><i class="fas fa-users text-gold me-2"></i> 12 Seats</span>
+                                <span><i class="fas fa-snowflake text-gold me-2"></i> A/C</span>
+                            </div>
+                            <p class="card-text mb-4">Ideal for group travel with ample space for passengers and luggage, perfect for family trips or corporate groups.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-check text-gold me-2"></i> Comfortable seating</li>
+                                <li><i class="fas fa-check text-gold me-2"></i> Luggage capacity</li>
+                                <li><i class="fas fa-check text-gold me-2"></i> Entertainment system</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="text-gold fw-bold fs-5 d-block">12,000 ETB</span>
+                                    <small class="text-muted">per day</small>
+                                </div>
+                                <a href="#contact" class="btn btn-gold">Reserve Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car 4 -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="card car-card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="car-img-container">
+                            <img src="assets/Images/Car4.jpg" class="card-img-top" alt="Range Rover">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Range Rover Sport</h5>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span><i class="fas fa-gas-pump text-gold me-2"></i> Premium</span>
+                                <span><i class="fas fa-users text-gold me-2"></i> 5 Seats</span>
+                                <span><i class="fas fa-snowflake text-gold me-2"></i> A/C</span>
+                            </div>
+                            <p class="card-text mb-4">British luxury meets off-road capability in this premium SUV that delivers both performance and comfort.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-check text-gold me-2"></i> Terrain Response system</li>
+                                <li><i class="fas fa-check text-gold me-2"></i> Panoramic roof</li>
+                                <li><i class="fas fa-check text-gold me-2"></i> Meridian sound system</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="text-gold fw-bold fs-5 d-block">22,000 ETB</span>
+                                    <small class="text-muted">per day</small>
+                                </div>
+                                <a href="#contact" class="btn btn-gold">Reserve Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car 5 -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="card car-card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="car-img-container">
+                            <img src="assets/Images/Car5.jpg" class="card-img-top" alt="Toyota Prado">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Toyota Land Cruiser Prado</h5>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span><i class="fas fa-gas-pump text-gold me-2"></i> Diesel</span>
+                                <span><i class="fas fa-users text-gold me-2"></i> 7 Seats</span>
+                                <span><i class="fas fa-snowflake text-gold me-2"></i> A/C</span>
+                            </div>
+                            <p class="card-text mb-4">A perfect balance of luxury and ruggedness for exploring Ethiopia's diverse landscapes in comfort.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-check text-gold me-2"></i> KDSS suspension</li>
+                                <li><i class="fas fa-check text-gold me-2"></i> Multi-terrain monitor</li>
+                                <li><i class="fas fa-check text-gold me-2"></i> Leather seats</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="text-gold fw-bold fs-5 d-block">15,500 ETB</span>
+                                    <small class="text-muted">per day</small>
+                                </div>
+                                <a href="#contact" class="btn btn-gold">Reserve Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car 6 -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="card car-card h-100 border-0 shadow-sm overflow-hidden">
+                        <div class="car-img-container">
+                            <img src="assets/Images/Car6.jpg" class="card-img-top" alt="Lexus LX570">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Lexus LX 570</h5>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span><i class="fas fa-gas-pump text-gold me-2"></i> Premium</span>
+                                <span><i class="fas fa-users text-gold me-2"></i> 8 Seats</span>
+                                <span><i class="fas fa-snowflake text-gold me-2"></i> A/C</span>
+                            </div>
+                            <p class="card-text mb-4">Ultimate luxury SUV with unmatched comfort and advanced technology features for discerning travelers.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-check text-gold me-2"></i> Mark Levinson audio</li>
+                                <li><i class="fas fa-check text-gold me-2"></i> Rear seat entertainment</li>
+                                <li><i class="fas fa-check text-gold me-2"></i> Adaptive variable suspension</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="text-gold fw-bold fs-5 d-block">20,000 ETB</span>
+                                    <small class="text-muted">per day</small>
+                                </div>
+                                <a href="#contact" class="btn btn-gold">Reserve Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rental Info Section -->
+    <section class="py-5 bg-secondary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
+                    <h2 class="display-5 fw-bold mb-4">Rental Information</h2>
+                    <div class="accordion" id="rentalInfoAccordion">
+                        <div class="accordion-item bg-transparent border-light mb-3">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    <i class="fas fa-file-signature text-gold me-2"></i> Rental Requirements
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#rentalInfoAccordion">
+                                <div class="accordion-body">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-gold me-2"></i> Valid driver's license (international license required for foreigners)</li>
+                                        <li><i class="fas fa-check text-gold me-2"></i> Minimum age: 23 years</li>
+                                        <li><i class="fas fa-check text-gold me-2"></i> Credit card for security deposit</li>
+                                        <li><i class="fas fa-check text-gold me-2"></i> Passport or national ID</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent border-light mb-3">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    <i class="fas fa-shield-alt text-gold me-2"></i> Insurance Coverage
+                                </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#rentalInfoAccordion">
+                                <div class="accordion-body">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-gold me-2"></i> Comprehensive insurance included</li>
+                                        <li><i class="fas fa-check text-gold me-2"></i> Collision damage waiver (CDW)</li>
+                                        <li><i class="fas fa-check text-gold me-2"></i> Theft protection</li>
+                                        <li><i class="fas fa-check text-gold me-2"></i> Third party liability</li>
+                                        <li><i class="fas fa-check text-gold me-2"></i> 24/7 roadside assistance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent border-light">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    <i class="fas fa-question-circle text-gold me-2"></i> Frequently Asked Questions
+                                </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#rentalInfoAccordion">
+                                <div class="accordion-body">
+                                    <h6>Can I take the vehicle outside Addis Ababa?</h6>
+                                    <p>Yes, all our vehicles can be taken anywhere in Ethiopia.</p>
+                                    <h6 class="mt-3">Is there a mileage limit?</h6>
+                                    <p>No, we offer unlimited mileage on all rentals.</p>
+                                    <h6 class="mt-3">Can I get a driver with the vehicle?</h6>
+                                    <p>Yes, we can provide professional drivers at an additional cost.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="assets/Images/rental-info.jpg" class="img-fluid rounded-3 shadow" alt="Rental Process">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Same Contact Section as index.html -->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="display-5 fw-bold">Contact Us</h2>
+                <p>Plan your Ethiopian adventure today</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h3 class="fw-bold mb-4">Contact Information</h3>
+                    <p class="mb-5">Reach out via any channel below. For urgent requests, call our 24/7 concierge line.</p>
+                    <div class="contact-info">
+                        <div class="d-flex mb-4">
+                            <div class="me-4 text-gold">
+                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Headquarters</h5>
+                                <p class="mb-0">Addis Ababa 4 Kilo</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="me-4 text-gold">
+                                <i class="fas fa-phone-alt fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Phone</h5>
+                                <p class="mb-0">+251 17556020 (24/7)</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="me-4 text-gold">
+                                <i class="fas fa-envelope fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Email</h5>
+                                <p class="mb-0">kiduattcr@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <h5 class="mb-3">Follow Us</h5>
+                        <div class="social-icons">
+                            <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-2x"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-5">
+                            <h3 class="fw-bold mb-4">Send Us A Message</h3>
+                            <form id="telegramForm">
+                                <div class="container mt-5">
+                                    <h2 class="text-center mb-4">Contact Us</h2>
+                                    <form id="telegramForm">
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label">Full Name</label>
+                                                <input type="text" class="form-control" id="name" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="phone" class="form-label">Phone Number *</label>
+                                                <input type="tel" class="form-control" id="phone" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="email" optional>
+                                            </div>
+                                            
+                                            <div class="col-12">
+                                                    <label class="form-label">Subject</label>
+                                                    <select class="form-select" id="subject">
+                                            
+                                                        <option value="#CarRent">Car Rent</option>
+                                                        <option value="#Tour">Tour</option>
+                                                        <option value="#other">other</option>
+                                                        
+                            
+                                                    </select>
+                                                    
+                                            </div>
+                                         <!--   <div class="col-12">
+                                                <label class="form-label">Subject</label>
+                                                <input type="text" class="form-control" id="subject" required>
+                                            </div>-->
+                                            <div class="col-12">
+                                                <label class="form-label">Message</label>
+                                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary w-100 py-3">
+                                                    <i class="fab fa-telegram me-2"></i> Send via Telegram
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            
+                                <script>
+                                    document.getElementById('telegramForm').addEventListener('submit', async function(e) {
+                                        e.preventDefault();
+                            
+                                        // Get form values
+                                        const name = document.getElementById('name').value;
+                                        const phone = document.getElementById('phone').value;
+                                        const email = document.getElementById('email').value;
+                                        const subject = document.getElementById('subject').value;
+                                        const message = document.getElementById('message').value;
+                            
+                                        // Format the message
+                                        const text = `📞 New Booking Inquiry:\n\n` +
+                                                     `👤 Name: ${name}\n` +
+                                                     `📱 Phone: ${phone}\n` +
+                                                     `✉️ Email: ${email}\n` +
+                                                     `📌 Subject: ${subject}\n` +
+                                                     `💬 Message: ${message}`;
+                            
+                                        // Replace with your bot token and chat ID
+                                        const BOT_TOKEN = '8092335619:AAETzBl_h_izb8EghSDZ5qe2ZOKl30VjBJY'; // Replace with your actual bot token
+                                        const CHAT_ID = '-4771579450';     // Replace with your actual chat ID
+                            
+                                        // Send the message to Telegram
+                                        try {
+                                            const response = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+                                                method: 'POST',
+                                                headers: { 'Content-Type': 'application/json' },
+                                                body: JSON.stringify({
+                                                    chat_id: CHAT_ID,
+                                                    text: text
+                                                })
+                                            });
+                            
+                                            const result = await response.json();
+                            
+                                            if (result.ok) {
+                                                alert('Your message has been sent successfully!');
+                                                this.reset(); // Clear the form
+                                            } else {
+                                                alert('Failed to send the message. Please try again.');
+                                            }
+                                        } catch (error) {
+                                            console.error('Error sending message:', error);
+                                            alert('An error occurred while sending the message.');
+                                        }
+                                    });
+                                </script>
+                            
+                            <style>
+                            .btn-telegram {
+                                background-color: #0088cc;
+                                color: white;
+                                border: none;
+                                transition: all 0.3s;
+                            }
+                            .btn-telegram:hover {
+                                background-color: #006699;
+                                transform: translateY(-2px);
+                            }
+                            </style>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darker py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class=" text-white mb-0">&copy; 2025 Kidus Tour/Travel & Car Rental. All rights reserved.</p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
